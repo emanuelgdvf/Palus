@@ -304,7 +304,8 @@
     .wood.stage-11 { width:260px; height:55px; border-radius:30px; transform:rotate(-5deg); }
     .wood.stage-12 { width:210px; height:38px; border-radius:20px; transform:rotate(7deg); }
     .wood.stage-13 { width:175px; height:27px; border-radius:15px; transform:rotate(-8deg); }
-    .wood.stage-14 { width:145px; height:20px; border-radius:12px; transform:rotate(6deg); background:repeating-linear-gradient(0deg,#d49a58 0 4px,#b76e34 4px 8px,#e5b36d 8px 11px); box-shadow:0 8px 20px rgba(0,0,0,.3),inset 0 2px 4px rgba(255,255,255,.2); }
+    .wood.stage-14 { width:145px; height:20px; border-radius:12px; transform:rotate(6deg); background:repeating-linear-gradient(0deg,#d49a58 0 4px,#b76e34 4px 8px,#e5b36d 8px 11px); box-shadow:0 8px 20px rgba(0,0,0,.3),inset 0 2px 4px rgba(255,255,255,.2); 
+    }
     .wood.stage-11::before, .wood.stage-11::after,
     .wood.stage-12::before, .wood.stage-12::after,
     .wood.stage-13::before, .wood.stage-13::after,
