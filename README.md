@@ -1,6 +1,6 @@
 # Palus
 ## 🔗 Acesse
-https://palus.onrender.com/
+https://palus.onrender.com
 
 ## 🛠 Tecnologias
 - HTML
