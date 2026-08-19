@@ -8,11 +8,11 @@ https://palus.onrender.com
 - JavaScript
 
 ## 📸 Preview
-<img width="1356" height="607" alt="Captura de tela de 2026-08-16 17-02-24" src="https://github.com/user-attachments/assets/c168544c-45a7-4183-b12d-68ff7d029395" />
-<img width="1356" height="607" alt="Captura de tela de 2026-08-16 17-02-34" src="https://github.com/user-attachments/assets/23ded382-8e20-4366-9cf5-760bad19766b" />
-<img width="1356" height="607" alt="Captura de tela de 2026-08-16 17-02-46" src="https://github.com/user-attachments/assets/300c6b80-b624-4f9f-b442-18de883422f8" />
-<img width="617" height="607" alt="Captura de tela de 2026-08-16 17-03-04" src="https://github.com/user-attachments/assets/225f4127-b987-4bc1-8700-564f8b871385" />
-<img width="617" height="607" alt="Captura de tela de 2026-08-16 17-03-07" src="https://github.com/user-attachments/assets/7fc8f85e-5076-4c4b-bbb0-917cbd8fe6b0" />
+
+<img width="1330" height="605" alt="Captura de tela de 2026-08-19 19-30-53" src="https://github.com/user-attachments/assets/d6b040a4-ce5e-4d5d-adf8-1c024bd6e6cc" />
+<img width="1330" height="605" alt="Captura de tela de 2026-08-19 19-29-17" src="https://github.com/user-attachments/assets/9b0b0812-cdb9-4630-9359-e9448da224dd" />
+<img width="1330" height="605" alt="Captura de tela de 2026-08-19 19-29-25" src="https://github.com/user-attachments/assets/c743c07a-349c-4961-831b-e86a04928146" />
+<img width="1330" height="605" alt="Captura de tela de 2026-08-19 19-29-33" src="https://github.com/user-attachments/assets/f1e62fa3-72f7-417f-aa01-1c7b6890c0c8" />
 
 ## MIT License
 
