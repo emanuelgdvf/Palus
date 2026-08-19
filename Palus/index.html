@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Palus</title>
+    <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/svg+xml" href="palus-favicon.svg" />
+</head>
+<body>
+  <div id="loginScreen" class="login-screen">
+    <div class="login-card">
+        <div class="login-icon">🪵Palus🪵</div>
+
+        <p>Acesse para coletar e <strong>leiloar</strong> seus palitos de dente.</p>
+
+        <label for="loginUser">Usuário</label>
+
+        <input
+            type="text"
+            id="loginUser"
+            placeholder="Digite seu usuário ex: admin">
+        <label for="loginPass">Senha</label>
+        <input
+            type="password"
+            id="loginPass"
+            placeholder="Digite sua senha ex: 1234">
+        <button id="loginBtn">🔐 Entrar</button>
+
+        <p id="loginError" class="login-error"></p>
+    </div>
+</div>
+  <div class="app">
+    <header>
+      <div class="brand">
+        <h1>🪵Palus🪵</h1>
+        <p><strong>Quebre</strong> o tronco para <strong>coletar</strong> um palito que contém uma <strong>frase</strong>, após coletá-lo e leve o palito para o <strong>leilão</strong>.</p>
+      </div>
+
+      <div class="wallet-group">
+        <div class="wallet coin-wallet">
+          <span>Moedas</span>
+          <strong id="coinBalance">🪙 0</strong>
+        </div>
+
+        <div class="wallet">
+          <span>Feito por:</span>
+          <strong id="balance">Emanuel 😉</strong>
+        </div>
+      </div>
+    </header>
+
+    <main class="grid">
+      <section class="panel">
+        <div class="panel-inner">
+          <h2 class="panel-title">Oficina</h2>
+          <p class="panel-subtitle">A cada clique reduz o tronco até ele virar um <strong>palito de dente</strong>.</p>
+        </div>
+
+        <div class="stage">
+          <div class="wood-wrap">
+            <div id="wood" class="wood stage-1">
+              <div class="crack"></div>
+            </div>
+
+            <div class="status">
+              <strong id="stageTitle">Tronco inteiro</strong>
+              <span id="stageText">Clique para aplicar o próximo golpe.</span>
+              <button id="breakBtn" class="break-btn">🪓 Quebrar madeira</button>
+            </div>
+
+            <div id="resultBox" class="result-box hidden">
+              <span id="rarity" class="rarity">Raro</span>
+              <div id="generatedValue" class="generated-value">Sem valor definido</div>
+              <div id="generatedPhrase" class="generated-phrase">
+                Um palito simples esconde uma oportunidade inesperada.
+              </div>
+
+              <label for="manualValue" style="display:block; margin-top:16px; color:var(--muted); font-size:.88rem;">
+                Valor do palito
+              </label>
+              <div style="display:flex; gap:10px; margin-top:7px;">
+                <input
+                  id="manualValue"
+                  type="number"
+                  min="0"
+                  step="0.01"
+                  inputmode="decimal"
+                  placeholder="Ex.: 25,00"
+                  style="flex:1; min-width:0; padding:12px 14px; border-radius:12px; border:1px solid rgba(255,255,255,.1); background:#0f1820; color:var(--text); outline:none;"
+                />
+              </div>
+
+              <div class="actions">
+                <button id="auctionCurrent" class="auction-btn">🔨 Leiloar este palito</button>
+                <button id="saveToLibrary" class="library-btn">📚 Guardar na biblioteca</button>
+                <button id="discardCurrent" class="discard-btn">🗑️ Descartar palito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <aside class="panel auction">
+        <div class="panel-inner">
+          <div class="auction-head">
+            <div>
+              <h2 class="panel-title" id="asideTitle">🏷️ Leilão de Palitos</h2>
+              <p class="panel-subtitle" id="asideSubtitle">Cada lote guarda seu valor e a frase gerada pelo RNG.</p>
+            </div>
+            <div id="lotCount" class="count">0</div>
+          </div>
+
+          <div class="tabs">
+            <button id="tabAuction" class="tab-btn active" type="button" data-tab="auction">🏷️ Leilão</button>
+            <button id="tabLibrary" class="tab-btn" type="button" data-tab="library">📚 Biblioteca</button>
+            <button id="tabMissions" class="tab-btn" type="button" data-tab="missions">🏆 Missões</button>
+          </div>
+
+          <div id="auctionList" class="auction-list">
+            <div class="empty" id="emptyAuction">
+              Nenhum palito foi leiloado ainda.<br />
+              Quebre o tronco e crie o primeiro lote.
+            </div>
+          </div>
+
+          <div id="libraryList" class="auction-list hidden">
+            <div class="empty" id="emptyLibrary">
+              Sua biblioteca está vazia.<br />
+              Guarde um palito para vê-lo aqui.
+            </div>
+          </div>
+
+          <div id="missionsList" class="auction-list hidden"></div>
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <div id="toast" class="toast"></div>
+  <script src="scripts.js"></script>
+</body>
+</html>
